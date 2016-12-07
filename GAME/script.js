@@ -59,7 +59,7 @@ function bruno() {
   btn1.innerHTML = "Dig";
   btn1.onclick = function () {digprep()};
     btn2.innerHTML = "Fly";
-  btn2.onclick = function () {flybruno()};
+  btn2.onclick = function () {flybrunoprep()};
 }
 function maple() {
  screen.innerHTML = "Dig or Fly?";
@@ -90,6 +90,7 @@ function flybrunoprep() {
   btn2.onclick = function() {takeem()};
 }
 function dig() {
+	debug.innerHTML = "Dig";
   if (stones == 1) {
     screen.innerHTML = "Why are you digging in here?!"
       btn1.innerHTML = "Punished";
@@ -118,6 +119,7 @@ function dig() {
   stones = 0;
 }
 function flybruno() {
+	debug.innerHTML = "Fly";
   if (stones == 1) {
     screen.innerHTML = "Freaking birds!"
       btn1.innerHTML = "You are shot down with a rifle";
@@ -146,6 +148,7 @@ function flybruno() {
   stones = 0;
 }
 function flymaple() {
+	debug.innerHTML = "Fly";
   if (stones == 1) {
     screen.innerHTML = "Freaking birds!"
       btn1.innerHTML = "You are shot down with a rifle";
@@ -183,6 +186,7 @@ function hide() {
 }
 
 function stone2() {
+	debug.innerHTML = "Thrown";
   if (stones == 1) {
     screen.innerHTML = "SHE'S TOO POWERFUL!"
       btn1.innerHTML = "You get brutally murdered";
